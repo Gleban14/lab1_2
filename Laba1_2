@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Типы Данных в JavaScript</title>
+</head>
+<body>
+    <h1>Типы Данных и Числовые Значения в JavaScript</h1>
+    <div id="output"></div>
+
+    <script>
+        // Переменные различных типов данных
+        let a = 52; // Число
+        let b = "Старый бог"; // Строка
+        let c = true; // Логический тип
+        let d = null; // Нулевое значение
+        let e; // Неопределенное значение
+        let f = { name: "Глеб" }; // Объект
+
+        // Вывод типов данных переменных
+        const output = document.getElementById('output');
+        output.innerHTML = `
+            <p>Тип a: ${typeof a}</p>
+            <p>Тип b: ${typeof b}</p>
+            <p>Тип c: ${typeof c}</p>
+            <p>Тип d: ${typeof d}</p>
+            <p>Тип e: ${typeof e}</p>
+            <p>Тип f: ${typeof f}</p>
+            <p>Максимальное значение числа: ${Number.MAX_VALUE}</p>  
+            <p>Минимальное значение числа: ${Number.MIN_VALUE}</p>
+        `;
+        // Number.MAX_VALUE — это свойство числа в JavaScript, которое представляет максимально возможное числовое значение положительного числа, которое может быть представлено в JavaScript.
+        // Number.MIN_VALUE — это свойство числа в JavaScript, которое представляет минимально возможное числовое значение положительного числа, которое может быть представлено в JavaScript.
+    </script>
+</body>
+</html>
